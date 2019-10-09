@@ -43,13 +43,13 @@ section {
 }
 
 /**/
-/*.portfolio .thumbnail {
+.portfolio .thumbnail {
     opacity: 0;
 }
 
 .portfolio .thumbnail.show {
     opacity: 1;
-}*/
+}
 
 .contact {
     min-height: 800px;
