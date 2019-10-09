@@ -29,6 +29,18 @@ $(window).scroll(function(){
 
 	});
 
+	if($(this).scrollTop() > 300){
+
+		$('.opaque-navbar').addClass('opaque');
+
+	} else {
+		$('.opaque-navbar').removeClass('opaque');
+	}
+
+
+
+
+
 
 	// paralax h1
 	$('.jumbotron h1').css({
@@ -40,7 +52,15 @@ $(window).scroll(function(){
 	// portfolio
 	if ( wScroll > $('.portfolio').offset().top - 250 ) {
 
-		$('.portfolio .thumbnail').addClass('show');
+			$('.portfolio .thumbnail').each(function() {
+				setTimeout(function (){
+					$('.portfolio .thumbnail').addClass('show');
+				}, 2000);
+
+
+			});
+
+		// 
 	}
 
 
