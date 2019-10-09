@@ -52,10 +52,10 @@ $(window).scroll(function(){
 	// portfolio
 	if ( wScroll > $('.portfolio').offset().top - 250 ) {
 
-			$('.portfolio .thumbnail').each(function() {
+			$('.portfolio .thumbnail').each(function(i) {
 				setTimeout(function (){
-					$('.portfolio .thumbnail').addClass('show');
-				}, 2000);
+					$('.portfolio .thumbnail').eq(i).addClass('show');
+				}, 300 * (i+1));
 
 
 			});
